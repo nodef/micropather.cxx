@@ -2,7 +2,8 @@ MicroPather
 ===========
 
 MicroPather is a path finder and A* solver (astar or a-star) written in platform 
-independent C++ that can be easily integrated into existing code. MicroPather 
+independent C++ that can be easily integrated into existing code - by
+[Lee Thomason](https://github.com/leethomason). MicroPather
 focuses on being a path finding engine for video games but is a generic A* solver. 
 MicroPather is open source, with a license suitable for open source or commercial 
 use.
@@ -11,6 +12,29 @@ The goals of MicroPather are:
 * Easy integration into games and other software
 * Easy to use and simple interface
 * Fast enough
+
+Installation
+------------
+
+Run:
+```bash
+$ npm i micropather.cxx
+```
+
+And then include `micropather.h` as follows:
+```cxx
+#include "node_modules/micropather.c/micropather.h"
+```
+
+You may also want to include `micropather.cpp` as follows:
+```cxx
+#ifndef __MICROPATHER_CXX__
+#define __MICROPATHER_CXX__
+#include "node_modules/micropather.c/micropather.cpp"
+#endif
+```
+
+This will include both the function declaration and their definitions into a single file.
 
 Demo
 ----
@@ -178,4 +202,10 @@ Some guidelines:
 Thanks for checking out MicroPather!
 
 Lee Thomason
- 
+
+<br>
+<br>
+
+
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/micropather.cxx)
